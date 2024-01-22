@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang='en'>
+<head>
+    <meta charset='UTF-8'>
+    <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+    <title>Nutritional Facts</title>
+    <link rel='stylesheet' href='styles.css'></link>
+</head>
+<body>
+
+    <header id='title'>
+        <h1>Nutrition</h1>
+    </header>
+
+    <nav id='nav'>
+        <ul>
+            <li><a href='#'>Home</a></li>
+            <li><a href='#'>Blog</a></li>
+        </ul>
+        <ul>
+            <li><a href='#'>About</a></li>
+            <li><a href='#'>Services</a></li>
+            <li><a href='#'>Contact</a></li>
+        </ul>
+    </nav>
+    
+
+    <main id='content'>
+        <section id='main-one'>
+            <h2>Welcome!</h2>
+            <p>
+                Take your Nutrition game to the next level!
+            </p>
+            <p>
+                Create a journal of the food you eat and we break down the macronutrients, vitamin, and mineral totals for you.
+            </p>
+            <p>
+                Compare the food you eat with other users and get advice from Nutritionalists 
+            </p>
+        </section>
+        <section id='main-two'>
+            <h2>Blog</h2>
+            <p><a target='_blank' href='/hello'>Link to Server Side Page</a></p>
+            
+        </section>
+        <div id='db_ideas'>
+            <ul class='db_attributes'>
+                <h3>'other' database (nutrient info)</h3>
+                <li>food_id : Integer (Primary key)</li>
+                <li>food_name : String</li>
+                <li>serving_size : Integer,</li>
+                <li>calories : Integer.</li>
+                <li>carbohydrates :
+                    <ul class='horizontal'>
+                        <li>total : Integer,</li>
+                        <li>fiber : Integer,</li>
+                        <li>sugar : Integer,</li>
+                        <li>added_sugar : Integer</li>
+                    </ul>
+                </li>
+                <li>protein : Integer,</li>
+                <li>fat : Integer,</li>
+                <li>minerals :
+                    <ul class='horizontal'>
+                        <li>calcium : Integer,</li>
+                        <li>iron : Integer,</li>
+                        <li>potassium : Integer,</li>
+                        <li>sodium : Integer,</li>
+                        <li>magnesium : Integer,</li>
+                        <li>phosphorous : Integer,</li>
+                        <li>zinc : Integer,</li>
+                        <li>copper : Integer,</li>
+                        <li>manganese : Integer,</li>
+                        <li>selenium : Integer</li>
+                    </ul>
+                </li>
+                <li>vitamins
+                    <ul class='horizontal'>
+                        <li>vitamin_a : Integer,</li>
+                        <li>vitamin_c : Integer,</li>
+                        <li>vitamin_d : Integer,</li>
+                        <li>vitamin_e : Integer,</li>
+                        <li>vitamin_k : Integer,</li>
+                        <li>vitamin_b1 : Integer,</li>
+                        <li>vitamin_b2 : Integer,</li>
+                        <li>vitamin_b5 : Integer,</li>
+                        <li>vitamin_b6 : Integer,</li>
+                        <li>vitamin_b7 : Integer,</li>
+                        <li>vitamin_b9 : Integer,</li>
+                        <li>vitamin_b12 : Integer,</li>
+                    </ul>
+                </li>
+            </ul>
+            <img src="pics/nutrition_facts_label.jpg" alt='nutrition facts label' />
+            <ul class='db_attributes'>
+                <h3>'other' database (recipes)</h3>
+                <li>recipe_id : Integer (primary key)</li>
+                <li>user_id : Integer (foreign key to web_users)</li>
+                <li>recipe_name : String</li>
+                <li>description : String</li>
+                <li>ingredients : String[]</li>
+                <li>instructions : String[]</li>
+                <li>prep_time_minutes : Integer</li>
+                <li>cook_time_minutes : Integer</li>
+                <li>total_time_minutes : Integer</li> 
+                <li>serving_size : Integer</li>
+                <li>date_added : Date</li>
+            </ul>
+        </div>
+        <div id='bottom-content'>
+            <p>I have only cursory experience with databases; following tutorials but not really understanding. <strong>It's certainly on my agenda to learn!</strong></p>
+            <p>I have built simple projects like hangman or minesweeper in React. I think it's my favorite library to use and Javascript/Typescript is definitely the language that I'm most comfortable using; all my leetcode problems are done in Javascript ( lol :/ ).</p>
+            <p>I think that this project is great! I am excited to implement my idea.</p>
+            <p>The part that I think will be challenging (now and in the future) is the Spring aspect; I've experience with Node (and express), but this mix of Java and webpages is completely new to me. So cool and confusing at the same time.</p>
+        </div>
+    </main>
+
+    <footer id='footer'>
+        <p>2024 &copy; Alexander Moyer</p>
+    </footer>
+
+</body>
+</html>
